@@ -1,5 +1,4 @@
 payload：
-# Domain
   - DOMAIN-KEYWORD,netflix
   - DOMAIN-KEYWORD,dualstack.apiproxy-
   - DOMAIN-KEYWORD,dualstack.ichnaea-web-
@@ -23,7 +22,7 @@ payload：
   - DOMAIN-SUFFIX,nflximg.net
   - DOMAIN-SUFFIX,nflxso.net
   - DOMAIN-SUFFIX,nflxvideo.net
-#IP-CIDR
+
   - IP-CIDR,23.246.0.0/18,no-resolve
   - IP-CIDR,37.77.184.0/21,no-resolve
   - IP-CIDR,38.72.126.0/24,no-resolve
