@@ -31,21 +31,21 @@ lancidr:
   gfwlist:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/naplesblue/clashx@1.0/yaml/gfwlist_domain.yaml"
+    url: "https://cdn.jsdelivr.net/gh/naplesblue/clashx@master/yaml/gfwlist_domain.yaml"
     path: ./ruleset/gfwlist.yaml
     interval: 86400
 
   accelchina:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/naplesblue/clashx@1.0/yaml/accelerated-domains.china.yaml"
+    url: "https://cdn.jsdelivr.net/gh/naplesblue/clashx@master/yaml/accelerated-domains.china.yaml"
     path: ./ruleset/accelchina.yaml
     interval: 86400
 
   cnip:
     type: http
     behavior: ipcidr
-    url: "https://cdn.jsdelivr.net/gh/naplesblue/clashx@1.0/yaml/china_ip_list.yaml"
+    url: "https://cdn.jsdelivr.net/gh/naplesblue/clashx@master/yaml/china_ip_list.yaml"
     path: ./ruleset/cnipcidr.yaml
     interval: 86400
   
