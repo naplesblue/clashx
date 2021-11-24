@@ -1,5 +1,6 @@
-# clashx
-clash pro rules
+# Clashx Pro规则
+
+自用Clash Pro分流规则
 
 Clash Pro下载：
 
