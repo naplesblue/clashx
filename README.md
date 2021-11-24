@@ -18,6 +18,13 @@ Netflix：分流Netflix到支持Netflix的服务器。
 ```
 #策略组
 rule-providers:
+lancidr:
+    type: http
+    behavior: ipcidr
+    url: "https://cdn.jsdelivr.net/gh/naplesblue/clashx@master/yaml/lancidr.yaml"
+    path: ./ruleset/lancidr.yaml
+    interval: 86400
+    
   gfwlist:
     type: http
     behavior: domain
@@ -38,17 +45,25 @@ rule-providers:
     url: "https://cdn.jsdelivr.net/gh/naplesblue/clashx@1.0/yaml/china_ip_list.yaml"
     path: ./ruleset/cnipcidr.yaml
     interval: 86400
+  
+  netflix:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/naplesblue/clashx/master/yaml/netflix.yaml"
+    path: ./ruleset/netflix.yaml
+    interval: 86400
 
 #策略    
 rules:
+  - RULE-SET,lancidr,DIRECT
   - DOMAIN-SUFFIX,huobi.com,Singapore
   - DOMAIN-SUFFIX,binance.com,HK
   - DOMAIN-SUFFIX,ftx.com,Singapore
   - RULE-SET,accelchina,DIRECT
   - RULE-SET,cnip,DIRECT
-  - RULE-SET,gfwlist,v2ray
-  - RULE-SET,lancidr,DIRECT
   - GEOIP,CN,DIRECT
+  - RULE-SET,netflix,US
+  - RULE-SET,gfwlist,v2ray
   - MATCH,v2ray
  
  ```
