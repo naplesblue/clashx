@@ -133,7 +133,7 @@ dns:
      
   # 当 fallback 参数被配置时, DNS 请求将同时发送至上方 nameserver 列表和下方 fallback 列表中配置的所有 DNS 服务器.
   # 当解析得到的 IP 地址的地理位置不是 CN 时，clash 将会选用 fallback 中 DNS 服务器的解析结果。
- fallback:
+  fallback:
     - 'tls://dns.google:853'
     - 'https://1.1.1.1/dns-query'
 
