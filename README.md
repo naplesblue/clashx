@@ -28,7 +28,14 @@ lancidr:
     url: "https://cdn.jsdelivr.net/gh/naplesblue/clashx@master/yaml/lancidr.yaml"
     path: ./ruleset/lancidr.yaml
     interval: 86400
-    
+
+applications:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/naplesblue/clashx@master/yaml/applications.yaml"
+    path: ./ruleset/applications.yaml
+    interval: 86400
+
   gfwlist:
     type: http
     behavior: domain
