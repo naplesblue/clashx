@@ -60,7 +60,7 @@ rule-providers:
   netflix:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/naplesblue/clashx/master/yaml/netflix.yaml"
+    url: "https://cdn.jsdelivr.net/gh/naplesblue/clashx@master/yaml/netflix.yaml"
     path: ./ruleset/netflix.yaml
     interval: 86400
 
