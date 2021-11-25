@@ -22,14 +22,14 @@ Clash Pro下载：
 
 # 策略组
 rule-providers:
-lancidr:
+  lancidr:
     type: http
     behavior: ipcidr
     url: "https://cdn.jsdelivr.net/gh/naplesblue/clashx@master/yaml/lancidr.yaml"
     path: ./ruleset/lancidr.yaml
     interval: 86400
 
-applications:
+  applications:
     type: http
     behavior: classical
     url: "https://cdn.jsdelivr.net/gh/naplesblue/clashx@master/yaml/applications.yaml"
@@ -67,6 +67,7 @@ applications:
 #策略    
 rules:
   - RULE-SET,lancidr,DIRECT
+  - RULE-SET,applications,DIRECT
   - DOMAIN-SUFFIX,huobi.com,Singapore
   - DOMAIN-SUFFIX,binance.com,HK
   - DOMAIN-SUFFIX,ftx.com,Singapore
